@@ -3,7 +3,7 @@ import React from 'react';
 function POPOSList() {
   return (
     <div>
-      <h1>Lorem Ipsum...</h1>
+      <h1>Keep your eye on this space for future content...</h1>
     </div>
   );
 }
