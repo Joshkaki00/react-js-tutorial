@@ -2,7 +2,7 @@ import React from 'react';
 import './POPOSSpace.css';
 
 function POPOSSpace(props) {
-  const { name, image, address, hours } = props;
+  const { name, image, address, hours, website } = props;
 
   return (
     <div className="POPOSSpace">
@@ -15,6 +15,11 @@ function POPOSSpace(props) {
       />
       <div>{address}</div>
       <div className="POPOSSpace-Hours">{hours}</div>
+      {website && (
+        <div className="POPOSSpace-Link">
+          <a href={website} target="_blank" rel="noopener noreferrer">Visit Website</a>
+        </div>
+      )}
     </div>
   );
 }
