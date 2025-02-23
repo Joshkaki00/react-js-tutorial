@@ -51,3 +51,19 @@
   .POPOSSpace-Link a:hover {
     color: #0056b3;  /* Darker blue on hover */
   }
+
+  .POPOSSpace-Features {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  
+  .POPOSSpace-Feature {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 0.8em;
+    padding: 4px 8px;
+    border-radius: 5px;
+    display: inline-block;
+  }
