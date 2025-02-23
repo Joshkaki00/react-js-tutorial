@@ -2,7 +2,7 @@ import React from 'react';
 import './POPOSSpace.css';
 
 function POPOSSpace(props) {
-  const { name, image, address, hours, website } = props;
+  const { name, image, address, hours, website, features } = props;
 
   return (
     <div className="POPOSSpace">
@@ -18,6 +18,13 @@ function POPOSSpace(props) {
       {website && (
         <div className="POPOSSpace-Link">
           <a href={website} target="_blank" rel="noopener noreferrer">Visit Website</a>
+        </div>
+      )}
+      {features && features.length > 0 && (
+        <div className="POPOSSpace-Features">
+          {features.map((feature, index) => (
+            <span key={index} className="POPOSSpace-Feature">{feature}</span>
+          ))}
         </div>
       )}
     </div>
