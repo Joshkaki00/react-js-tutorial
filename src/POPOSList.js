@@ -4,13 +4,14 @@ import './POPOSList.css';
 import data from './sfpopos-data.json';
 
 function POPOSList() {
-  const spaces = data.map(({ title, address, images, hours }) => (
+  const spaces = data.map(({ title, address, images, hours, website }) => (
     <POPOSSpace
-      key={title}  // Use title as a unique key
+      key={title}
       name={title}
       address={address}
-      image={images[0]}  // Use the first image from the array
+      image={images[0]}
       hours={hours}
+      website={website}  // Pass website as a prop
     />
   ));
 
