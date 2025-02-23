@@ -6,6 +6,7 @@ import POPOSList from './POPOSList';
 import About from './About';
 import reportWebVitals from './reportWebVitals';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import POPOSDetails from './POPOSDetails';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -16,6 +17,7 @@ root.render(
       <Route path="/" element={<App />}>
         <Route path="/" element={<POPOSList />} />
         <Route path="about" element={<About />} />
+        <Route path="details/:id" element={<POPOSDetails />} />  {/* Details Route */}
       </Route>
     </Routes>
   </Router>
