@@ -1,0 +1,9 @@
+.POPOSSpace {
+    width: 100%;
+    text-align: center;  /* Center text */
+  }
+  
+  .POPOSSpace > img {
+    width: 100%;
+    height: auto;  /* Maintain aspect ratio */
+  }
