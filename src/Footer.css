@@ -4,3 +4,27 @@
     background-color: #333;
     color: white;
   }
+  
+  .Footer-Nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between links */
+  }
+  
+  .Footer-Nav li {
+    display: inline;
+  }
+  
+  .Footer-Nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .Footer-Nav a:hover {
+    color: #4CAF50;  /* Change color on hover */
+  }
