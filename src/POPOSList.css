@@ -1,7 +1,7 @@
 .POPOSList {
-    width: calc(100% - 80px);  /* Full width minus 80px */
-    margin: auto;               /* Center horizontally */
-    display: grid;              /* Use grid layout */
-    grid-template-columns: 1fr 1fr 1fr;  /* Three equal columns */
-    grid-gap: 40px;             /* 40px gap between elements */
-  }
+  width: calc(100% - 80px);
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  grid-gap: 40px;
+}
