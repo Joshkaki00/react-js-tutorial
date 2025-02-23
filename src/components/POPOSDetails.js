@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import data from './sfpopos-data.json';
+import data from '../sfpopos-data.json';
 
 function POPOSDetails() {
   const { id } = useParams();  // Get the ID from the URL
