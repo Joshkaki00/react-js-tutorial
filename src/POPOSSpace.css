@@ -1,9 +1,31 @@
 .POPOSSpace {
     width: 100%;
-    text-align: center;  /* Center text */
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;  /* Rounded corners */
+    overflow: hidden;  /* Prevent content overflow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+    transition: transform 0.3s ease;
+  }
+  
+  .POPOSSpace:hover {
+    transform: scale(1.05);  /* Scale up slightly on hover */
   }
   
   .POPOSSpace > img {
     width: 100%;
-    height: auto;  /* Maintain aspect ratio */
+    height: auto;
+    border-bottom: 2px solid #4CAF50;
+  }
+  
+  .POPOSSpace h1 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0 5px;
+  }
+  
+  .POPOSSpace div {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
   }
