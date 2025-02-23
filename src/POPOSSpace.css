@@ -29,3 +29,10 @@
     color: #555;
     margin-bottom: 10px;
   }
+  
+  .POPOSSpace-Hours {
+    font-style: italic;  /* Display hours in italics */
+    font-size: 0.9em;    /* Smaller font size */
+    color: #555;         /* Dark gray color */
+    margin-top: 5px;     /* Add space above the hours */
+  }
