@@ -36,3 +36,18 @@
     color: #555;
     margin-top: 5px;
   }
+
+  .POPOSSpace-Link {
+    margin-top: 8px;
+  }
+  
+  .POPOSSpace-Link a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .POPOSSpace-Link a:hover {
+    color: #0056b3;  /* Darker blue on hover */
+  }
