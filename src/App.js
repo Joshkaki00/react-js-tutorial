@@ -1,6 +1,5 @@
 import './App.css';
 import Title from './components/Title';
-import POPOSList from './components/POPOSList';
 import Footer from './Footer';
 import { Outlet } from 'react-router-dom';
 
@@ -8,7 +7,6 @@ function App() {
   return (
     <div className="App">
       <Title />
-      <POPOSList />
       <Outlet />
       <Footer />
     </div>
