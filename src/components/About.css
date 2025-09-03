@@ -1,0 +1,51 @@
+.About {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+
+.About-content {
+  max-width: 800px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.About-content h1 {
+  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.About-content p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 1.5em;
+}
+
+.About-content strong {
+  color: #4CAF50;
+}
+
+@media only screen and (max-width: 768px) {
+  .About {
+    padding: 1em;
+    align-items: flex-start;
+  }
+  
+  .About-content {
+    text-align: left;
+  }
+  
+  .About-content h1 {
+    font-size: 2em;
+    margin-bottom: 0.8em;
+  }
+  
+  .About-content p {
+    font-size: 1em;
+    margin-bottom: 1.2em;
+  }
+}
