@@ -28,3 +28,24 @@
   .Footer-Nav a:hover {
     color: #4CAF50;  /* Change color on hover */
   }
+
+@media only screen and (max-width: 768px) {
+  .Footer {
+    padding: 0.8em;
+  }
+  
+  .Footer p {
+    margin: 0.5em 0;
+    font-size: 0.9em;
+  }
+  
+  .Footer-Nav ul {
+    gap: 10px;
+    margin: 0.8em 0 0 0;
+  }
+  
+  .Footer-Nav a {
+    font-size: 0.9em;
+    padding: 0.3em 0.6em;
+  }
+}

@@ -67,3 +67,28 @@
     border-radius: 5px;
     display: inline-block;
   }
+
+@media only screen and (max-width: 768px) {
+  .POPOSSpace {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  
+  .POPOSSpace h1 {
+    font-size: 1.3em;
+  }
+  
+  .POPOSSpace div {
+    font-size: 0.95em;
+    padding: 0 1em;
+  }
+  
+  .POPOSSpace-Features {
+    justify-content: center;
+    padding: 0 1em 1em 1em;
+  }
+  
+  .POPOSSpace-Link {
+    padding-bottom: 1em;
+  }
+}
