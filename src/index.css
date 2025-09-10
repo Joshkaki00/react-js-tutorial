@@ -22,6 +22,19 @@ img {
   height: auto;
 }
 
+/* Tablet styles */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Mobile styles */
 @media only screen and (max-width: 768px) {
   body {
     font-size: 14px;

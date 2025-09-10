@@ -54,6 +54,37 @@
   font-size: 0.9em;
 }
 
+/* Tablet styles */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .POPOSDetails {
+    max-width: 750px;
+    padding: 1.5em;
+  }
+  
+  .POPOSDetails-image {
+    margin-bottom: 1.8em;
+  }
+  
+  .POPOSDetails-image img {
+    max-width: 550px;
+  }
+  
+  .POPOSDetails-content {
+    padding: 0 0.5em;
+  }
+  
+  .POPOSDetails-content h1 {
+    font-size: 2em;
+    margin-bottom: 0.7em;
+  }
+  
+  .POPOSDetails-content p {
+    font-size: 1.05em;
+    margin-bottom: 1.1em;
+  }
+}
+
+/* Mobile styles */
 @media only screen and (max-width: 768px) {
   .POPOSDetails {
     padding: 1em;

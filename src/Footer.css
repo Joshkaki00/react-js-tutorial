@@ -29,6 +29,29 @@
     color: #4CAF50;  /* Change color on hover */
   }
 
+/* Tablet styles */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .Footer {
+    padding: 0.9em;
+  }
+  
+  .Footer p {
+    margin: 0.6em 0;
+    font-size: 0.95em;
+  }
+  
+  .Footer-Nav ul {
+    gap: 12px;
+    margin: 0.9em 0 0 0;
+  }
+  
+  .Footer-Nav a {
+    font-size: 0.95em;
+    padding: 0.35em 0.7em;
+  }
+}
+
+/* Mobile styles */
 @media only screen and (max-width: 768px) {
   .Footer {
     padding: 0.8em;
