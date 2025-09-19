@@ -5,16 +5,11 @@ function Footer() {
     const currentYear = new Date().getFullYear();
   
     return (
-      <div className="Footer">
-        <p>Mitchell Hudson &copy; {currentYear}</p>
-        <nav className="Footer-Nav">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+      <footer className="Footer" role="contentinfo">
+        <p>
+          <span>&copy; {currentYear} Mitchell Hudson</span>
+        </p>
+      </footer>
     );
   }
   

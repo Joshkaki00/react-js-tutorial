@@ -18,10 +18,30 @@
     border-bottom: 2px solid #4CAF50;
   }
   
-  .POPOSSpace h1 {
+  .POPOSSpace h2 {
     font-size: 1.5em;
     color: #333;
     margin: 10px 0 5px;
+  }
+  
+  .POPOSSpace header {
+    margin-bottom: 1em;
+  }
+  
+  .POPOSSpace-Content {
+    padding: 1em;
+  }
+  
+  .POPOSSpace-ImageLink:focus-visible {
+    outline: 2px solid #4CAF50;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  
+  .POPOSSpace-Address {
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 0.5em;
   }
   
   .POPOSSpace div {
@@ -55,17 +75,23 @@
   .POPOSSpace-Features {
     margin-top: 10px;
     display: flex;
-    gap: 5px;
+    gap: 8px;
     flex-wrap: wrap;
+    justify-content: center;
   }
   
   .POPOSSpace-Feature {
-    background-color: #4CAF50;
-    color: white;
-    font-size: 0.8em;
-    padding: 4px 8px;
-    border-radius: 5px;
+    color: #333;
+    background-color: #e8e8e8;
+    font-size: 0.75em;
+    font-weight: 500;
+    padding: 1px 4px;
+    border: none;
+    border-radius: 2px;
     display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-family: sans-serif;
   }
 
 /* Tablet styles */
@@ -75,7 +101,7 @@
     max-width: 420px;
   }
   
-  .POPOSSpace h1 {
+  .POPOSSpace h2 {
     font-size: 1.4em;
   }
   
@@ -105,7 +131,7 @@
     max-width: 400px;
   }
   
-  .POPOSSpace h1 {
+  .POPOSSpace h2 {
     font-size: 1.3em;
   }
   

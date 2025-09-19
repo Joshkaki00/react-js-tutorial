@@ -54,6 +54,37 @@
   font-size: 0.9em;
 }
 
+/* New accessibility styles */
+.features-list {
+  list-style: disc;
+  margin-left: 1.5em;
+  margin-top: 0.5em;
+}
+
+.feature-item {
+  margin-bottom: 0.3em;
+  color: #4CAF50;
+  font-weight: 500;
+}
+
+.error-message {
+  text-align: center;
+  padding: 3em 2em;
+  color: #d32f2f;
+}
+
+.error-message h1 {
+  color: #d32f2f;
+  margin-bottom: 1em;
+}
+
+.POPOSDetails-description,
+.POPOSDetails-hours,
+.POPOSDetails-features,
+.POPOSDetails-coordinates {
+  margin-bottom: 1.5em;
+}
+
 /* Tablet styles */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .POPOSDetails {

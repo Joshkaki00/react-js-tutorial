@@ -7,12 +7,18 @@
   padding: 2em;
 }
 
+/* Search container styling */
+.search-container {
+  margin-bottom: 2em;
+  padding: 0 1em;
+}
+
 /* Search bar styling */
 .search-bar {
   width: 100%;
   max-width: 500px;
   padding: 12px 16px;
-  margin: 0 auto 2em auto;
+  margin: 0 auto;
   display: block;
   border: 2px solid #ddd;
   border-radius: 8px;
@@ -23,6 +29,20 @@
 .search-bar:focus {
   outline: none;
   border-color: #4CAF50;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+}
+
+/* No results styling */
+.no-results {
+  text-align: center;
+  padding: 2em;
+  color: #666;
+  font-style: italic;
+}
+
+.no-results p {
+  margin: 0;
+  font-size: 1.1em;
 }
 
 /* Tablet styles */

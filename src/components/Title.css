@@ -12,9 +12,22 @@
 }
 
 .Title-Subtitle {
-  color: rgba(255, 255, 255, 0.75); 
+  color: rgba(255, 255, 255, 0.95); 
   font-size: 1.2em;
   margin-top: 0.5em;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0 0 0;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+
+.nav-list li {
+  display: inline;
 }
 
 .Title a {
@@ -23,11 +36,29 @@
   color: rgba(255, 255, 255, 0.835);
   font-weight: bold;
   text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.Title a:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .Title .nav-link-active {
   color: #fff;
   border-bottom: 2px solid;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Accessibility improvements */
+.Title abbr {
+  text-decoration: none;
+}
+
+.Title abbr:hover {
+  text-decoration: underline;
 }
 
 /* Tablet styles */

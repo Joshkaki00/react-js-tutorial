@@ -17,34 +17,58 @@ function POPOSList() {
   );
 
   return (
-    <div>
-      {/* Controlled input */}
-      <input
-        type="text"
-        placeholder="Search for a space..."
-        value={search}
-        onChange={handleSearchChange}
-        className="search-bar"
-      />
-      <div className="POPOSList">
+    <main>
+      <div className="search-container">
+        <label htmlFor="space-search" className="visually-hidden">
+          Search for public spaces by name
+        </label>
+        <input
+          id="space-search"
+          type="text"
+          placeholder="Search for a space..."
+          value={search}
+          onChange={handleSearchChange}
+          className="search-bar"
+          aria-describedby="search-help"
+          aria-label="Search for public spaces by name"
+        />
+        <div id="search-help" className="visually-hidden">
+          Type to filter the list of public spaces by name
+        </div>
+      </div>
+      
+      <div 
+        className="POPOSList"
+        role="region"
+        aria-label="Public spaces"
+        aria-live="polite"
+        aria-atomic="false"
+      >
         {filteredSpaces.length > 0 ? (
-          filteredSpaces.map(({ title, address, images, hours, website, features }, i) => (
-            <POPOSSpace
-              key={title}
-              id={i}
-              name={title}
-              address={address}
-              image={images[0]}
-              hours={hours}
-              website={website}
-              features={features}
-            />
-          ))
+          <>
+            <div className="visually-hidden" aria-live="polite">
+              {filteredSpaces.length} {filteredSpaces.length === 1 ? 'space' : 'spaces'} found
+            </div>
+            {filteredSpaces.map(({ title, address, images, hours, website, features }, i) => (
+              <POPOSSpace
+                key={title}
+                id={i}
+                name={title}
+                address={address}
+                image={images[0]}
+                hours={hours}
+                website={website}
+                features={features}
+              />
+            ))}
+          </>
         ) : (
-          <p>No spaces found</p>
+          <div className="no-results" role="status" aria-live="polite">
+            <p>No spaces found matching "{search}". Try a different search term.</p>
+          </div>
         )}
       </div>
-    </div>
+    </main>
   );
 }
 
